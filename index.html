@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Zohra Mirzaiy - Creative Developer & Designer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+</head>
+<body>
+    <div class="global-floating-shapes">
+        <span class="floating-shape shape1">&lt;/&gt;</span>
+        <span class="floating-shape shape2">{ }</span>
+        <span class="floating-shape shape3">&lt;h1&gt;</span>
+        <span class="floating-shape shape4">;</span>
+        <span class="floating-shape shape5">/</span>
+        <span class="floating-shape shape6">&lt;div&gt;</span>
+        <span class="floating-shape shape7">&#123; &#125;</span>
+        <span class="floating-shape shape8">&lt; / &gt;</span>
+    </div>
+    <!-- Navigation -->
+    <nav class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="#home">
+                    <span class="logo-text">ZM</span>
+                    <div class="logo-dot"></div>
+                </a>
+            </div>
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>Home
+                </a></li>
+                <li><a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>About
+                </a></li>
+                <li><a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-code"></i>Projects
+                </a></li>
+                <li><a href="#resume" class="nav-link" data-section="resume">
+                    <i class="fas fa-file-alt"></i>Resume & Cover Letter
+                </a></li>
+                <li><a href="#certificates" class="nav-link" data-section="certificates">
+                    <i class="fas fa-certificate"></i>Certificates
+                </a></li>
+                <li><a href="#awards" class="nav-link" data-section="awards">
+                    <i class="fas fa-trophy"></i>Awards
+                </a></li>
+                <li><a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>Contact
+                </a></li>
+            </ul>
+            <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+                <i class="fas fa-moon"></i>
+            </button>
+            <div class="hamburger" id="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-background"></div>
+        <div class="hero-video-overlay"></div>
+        <!-- Optional Video Background -->
+        <video class="hero-video" autoplay muted loop playsinline>
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+        </video>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1 class="hero-title">
+                    <span class="typewriter-animated">
+                        <span class="word">Hi!</span> <span class="word">I</span> <span class="word">am</span> <span class="word">Zohra</span> <span class="word">Mirzaiy</span>
+                    </span>
+                    <div class="hero-signature">ZM</div>
+                </h1>
+                <div class="hero-role animated-role">Creative Developer & Designer</div>
+                <p class="hero-subtitle">
+                    I blend creativity with technology to build meaningful digital solutions. 
+                    Currently studying at George Brown College in Canada.
+                </p>
+                <div class="hero-buttons">
+                    <a href="#projects" class="btn btn-primary">
+                        <i class="fas fa-rocket"></i>View My Work
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        <i class="fas fa-paper-plane"></i>Let's Talk
+                    </a>
+                </div>
+            </div>
+            <div class="hero-visual">
+                <div class="hero-image-container">
+                    <div class="hero-image" id="heroImage">
+                        <img src="first.jpg" alt="Zohra Mirzaiy profile photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                    </div>
+                    <div class="floating-elements">
+                        <div class="floating-card card-1">
+                            <i class="fas fa-palette"></i>
+                        </div>
+                        <div class="floating-card card-2">
+                            <i class="fas fa-code"></i>
+                        </div>
+                        <div class="floating-card card-3">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                    </div>
+                    <!-- Hand-drawn accent elements -->
+                    <div class="hand-drawn-accent accent-1"></div>
+                    <div class="hand-drawn-accent accent-2"></div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-text">Scroll to explore</div>
+            <div class="scroll-arrow"></div>
+        </div>
+        <!-- Floating Contact Button -->
+        <div class="floating-contact">
+            <button class="floating-contact-btn" onclick="scrollToContact()">
+                <i class="fas fa-comments"></i>
+                <span>Let's Chat</span>
+            </button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <p class="section-subtitle">My journey in the digital world</p>
+            </div>
+            
+            <!-- Bio Section with Picture -->
+            <div class="bio-section" style="max-width: 900px; margin: 0 auto 4rem; background: var(--glass-bg); padding: 3rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow);">
+                <div style="display: grid; grid-template-columns: 200px 1fr; gap: 2.5rem; align-items: center;">
+                    <div class="bio-image-container" style="position: relative;">
+                        <div class="bio-image" style="width: 200px; height: 200px; border-radius: 50%; overflow: hidden; border: 4px solid var(--accent-secondary); box-shadow: 0 8px 24px rgba(0,0,0,0.1);">
+                            <img src="first.jpg" alt="Zohra Mirzaiy" id="bioPicture" style="width: 100%; height: 100%; object-fit: cover;" onerror="this.style.display='none'; this.nextElementSibling.style.display='flex';">
+                            <div style="display: none; width: 100%; height: 100%; background: var(--accent-color); align-items: center; justify-content: center; color: white; font-size: 3rem;">
+                                <i class="fas fa-user"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="bio-content">
+                        <h3 style="font-size: 2rem; margin-bottom: 1rem; color: var(--text-primary);">Zohra Mirzaiy</h3>
+                        <p class="about-tagline" style="font-size: 1.2rem; color: var(--accent-color); margin-bottom: 1.5rem; font-weight: 600;">System Administrator & Front-End Developer</p>
+                        <div class="bio-summary" style="color: var(--text-secondary); line-height: 1.8; font-size: 1.05rem;">
+                            <p>
+                                I'm Zohra, a dedicated learner with strong skills in Linux and Windows system administration, plus scripting in Python and Bash. 
+                                I also enjoy front‑end development, working with HTML, CSS, Bootstrap, and some Java to build user‑friendly projects. 
+                                I approach challenges with clarity and persistence, whether it's managing systems, automating tasks, or designing web solutions. 
+                                My portfolio highlights my coursework, projects, and achievements as I prepare to grow into professional opportunities.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-content">
+                <div class="about-intro">
+                    <div class="about-story">
+                        <p>
+                            I'm constantly learning and exploring new technologies to stay at the forefront of web development and design. 
+                            My approach combines technical expertise with creative problem-solving, ensuring that every project I work on is both 
+                            functional and beautiful.
+                        </p>
+                    </div>
+                    
+                    <!-- My Values Section -->
+                    <div class="my-values">
+                        <h4>What Drives Me:</h4>
+                        <div class="values-grid">
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-heart"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Empathy</h5>
+                                    <p>Understanding user needs and emotions</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-lightbulb"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Innovation</h5>
+                                    <p>Pushing boundaries and exploring new ideas</p>
+                                </div>
+                            </div>
+                            <div class="value-item">
+                                <div class="value-icon">
+                                    <i class="fas fa-globe"></i>
+                                </div>
+                                <div class="value-content">
+                                    <h5>Cultural Bridge</h5>
+                                    <p>Connecting global and local perspectives</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-skills">
+                        <h4>What I bring to the table:</h4>
+                        <div class="skills-tags">
+                            <span class="skill-tag">UI/UX Design</span>
+                            <span class="skill-tag">Frontend Development</span>
+                            <span class="skill-tag">Responsive Design</span>
+                            <span class="skill-tag">Creative Problem Solving</span>
+                            <span class="skill-tag">Cross-cultural Design</span>
+                            <span class="skill-tag">User Research</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="about-visual">
+                    <div class="about-image-container">
+                        <div class="about-image" id="aboutImage">
+                            <img src="second.jpg" alt="Zohra Mirzaiy about photo" style="width: 100%; height: 100%; object-fit: cover; border-radius: 20px;">
+                        </div>
+                        <div class="about-decoration">
+                            <div class="decoration-line"></div>
+                            <div class="decoration-dots"></div>
+                        </div>
+                        <!-- Sticky note effect -->
+                        <div class="sticky-note">
+                            <p>"Design with purpose, code with passion"</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Featured Projects</h2>
+                <p class="section-subtitle">A showcase of my best work and creative project</p>
+            </div>
+            
+            <!-- George Brown College Projects -->
+            <div class="project-category">
+                <h3 class="category-title">
+                    <i class="fas fa-graduation-cap"></i>
+                    George Brown College Projects
+                </h3>
+                
+                <!-- Projects Grid - Only 3 Projects -->
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Smart Cafe - JavaScript Project</h4>
+                                    <p>Intelligent coffee ordering system with smart features</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Smart Cafe - JavaScript Project</h4>
+                                <span class="project-category-tag">Web Application</span>
+                            </div>
+                            <p class="project-description">A smart coffee shop ordering system featuring intelligent ordering, automatic discounts for students and seniors, bill splitting functionality, and real-time order calculations. Includes login system and access control.</p>
+                            <div class="project-links-small">
+                                <a href="https://zohramirzaiy.github.io/Smart-Cafe-Java-scrip-project-/" target="_blank" class="project-link-small">View Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Foodie Hub</h4>
+                                    <p>Korean cuisine website with restaurant menus</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">CSS3</span>
+                                        <span class="tech-tag">Bootstrap 5</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Foodie Hub</h4>
+                                <span class="project-category-tag">Frontend Website</span>
+                            </div>
+                            <p class="project-description">A fully responsive Korean food ordering platform featuring six Korean restaurants with individual menu pages, order forms, and modern design. Built with HTML, Bootstrap 5, and CSS only (no JavaScript).</p>
+                            <div class="project-links-small">
+                                <a href="https://github.com/ZohraMirzaiy/Foodie-Hub" target="_blank" class="project-link-small">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-overlay-content">
+                                    <h4>Zombie Game</h4>
+                                    <p>Interactive browser-based game</p>
+                                    <div class="project-tech">
+                                        <span class="tech-tag">HTML5</span>
+                                        <span class="tech-tag">JavaScript</span>
+                                        <span class="tech-tag">CSS3</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="project-content">
+                            <div class="project-header">
+                                <h4>Zombie Game</h4>
+                                <span class="project-category-tag">Game Development</span>
+                            </div>
+                            <p class="project-description">An interactive browser-based zombie game built with HTML5, JavaScript, and CSS. Features game mechanics, scoring system, and engaging gameplay.</p>
+                            <div class="project-links-small">
+                                <a href="https://github.com/ZohraMirzaiy/Zombie-Game" target="_blank" class="project-link-small">View on GitHub</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- GitHub Link -->
+                <div class="github-link-container" style="text-align: center; margin-top: 3rem;">
+                    <a href="https://github.com/ZohraMirzaiy" target="_blank" class="github-link-btn" style="display: inline-flex; align-items: center; gap: 0.75rem; padding: 1rem 2rem; background: var(--accent-color); color: white; text-decoration: none; border-radius: var(--border-radius); font-weight: 600; font-size: 1.1rem; transition: all 0.3s ease; box-shadow: 0 4px 16px rgba(0,0,0,0.1);">
+                        <i class="fab fa-github" style="font-size: 1.5rem;"></i>
+                        <span>View All Projects on GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume & Cover Letter Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume & Cover Letter</h2>
+                <p class="section-subtitle">Download my resume and cover letter to learn more about my experience and qualifications</p>
+            </div>
+            <div class="resume-content" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem; padding: 3rem 0; max-width: 1000px; margin: 0 auto;">
+                <div class="resume-download-card" style="background: var(--glass-bg); padding: 3rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); text-align: center;">
+                    <i class="fas fa-file-pdf" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);">My Resume</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Click the button below to download my resume in PDF format.</p>
+                    <a href="Zohra Resume .pdf" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-download"></i>Download Resume
+                    </a>
+                </div>
+                
+                <div class="cover-letter-download-card" style="background: var(--glass-bg); padding: 3rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); text-align: center;">
+                    <i class="fas fa-file-alt" style="font-size: 4rem; color: var(--accent-color); margin-bottom: 1.5rem;"></i>
+                    <h3 style="margin-bottom: 1rem; color: var(--text-primary);">My Cover Letter</h3>
+                    <p style="color: var(--text-secondary); margin-bottom: 2rem;">Click the button below to download my cover letter in PDF format.</p>
+                    <a href="Zohra Mirzaiy1coverletter.pdf" target="_blank" class="btn btn-primary" style="display: inline-flex; align-items: center; gap: 0.5rem;">
+                        <i class="fas fa-download"></i>Download Cover Letter
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Certificates Section -->
+    <section id="certificates" class="certificates">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Certificates & Diplomas</h2>
+                <p class="section-subtitle">Professional certifications and academic achievements</p>
+            </div>
+            <div class="certificates-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+                <div class="certificate-card" style="background: var(--glass-bg); padding: 2rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); transition: all 0.3s ease;">
+                    <div class="certificate-icon" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem; text-align: center;">
+                        <i class="fas fa-laptop-code"></i>
+                    </div>
+                    <h4 style="text-align: center; margin-bottom: 1rem; color: var(--text-primary);">Computer Certificate</h4>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 1.5rem;">Professional certification in computer systems and technology.</p>
+                    <div style="text-align: center;">
+                        <a href="Computer Certificate .PDF" target="_blank" class="project-link-small">View Certificate</a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card" style="background: var(--glass-bg); padding: 2rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); transition: all 0.3s ease;">
+                    <div class="certificate-icon" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem; text-align: center;">
+                        <i class="fas fa-language"></i>
+                    </div>
+                    <h4 style="text-align: center; margin-bottom: 1rem; color: var(--text-primary);">Duolingo English Test</h4>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 1.5rem;">Official English language proficiency test results from Duolingo.</p>
+                    <div style="text-align: center;">
+                        <a href="Duolingo English Test.pdf" target="_blank" class="project-link-small">View Certificate</a>
+                    </div>
+                </div>
+                
+                <div class="certificate-card" style="background: var(--glass-bg); padding: 2rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); transition: all 0.3s ease;">
+                    <div class="certificate-icon" style="font-size: 3rem; color: var(--accent-color); margin-bottom: 1rem; text-align: center;">
+                        <i class="fas fa-graduation-cap"></i>
+                    </div>
+                    <h4 style="text-align: center; margin-bottom: 1rem; color: var(--text-primary);">School Certificate</h4>
+                    <p style="text-align: center; color: var(--text-secondary); margin-bottom: 1.5rem;">Academic certificate from educational institution.</p>
+                    <div style="text-align: center;">
+                        <a href="school_certificate.jpg" target="_blank" class="project-link-small">View Certificate</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Academic Awards Section -->
+    <section id="awards" class="awards">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Academic Awards</h2>
+                <p class="section-subtitle">Recognition for academic excellence and achievements</p>
+            </div>
+            <div class="awards-content" style="max-width: 800px; margin: 0 auto;">
+                <div class="awards-list" style="display: flex; flex-direction: column; gap: 1.5rem;">
+                    <div class="award-item" style="background: var(--glass-bg); padding: 2rem; border-radius: var(--border-radius); border: var(--card-border); box-shadow: var(--shadow); display: flex; align-items: center; gap: 1.5rem;">
+                        <div class="award-icon" style="font-size: 2.5rem; color: var(--accent-secondary);">
+                            <i class="fas fa-envelope-open-text"></i>
+                        </div>
+                        <div class="award-details" style="flex: 1;">
+                            <h4 style="margin-bottom: 0.5rem; color: var(--text-primary);">Dean's Letter</h4>
+                            <p style="color: var(--text-secondary); margin-bottom: 0.5rem;">Recognition letter from the Dean</p>
+                            <div style="margin-top: 1rem;">
+                                <a href="Dean_letter.pdf" target="_blank" class="project-link-small">View Letter</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">What People Say</h2>
+                <p class="section-subtitle">Feedback from collaborators and peers</p>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card featured-testimonial">
+                    <div class="testimonial-content">
+                        <div class="quote-icon">
+                            <i class="fas fa-quote-left"></i>
+                        </div>
+                        <p>"Zohra's attention to detail and understanding of user needs is exceptional. She transformed our vision into a beautiful, functional design that exceeded our expectations."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Arif Naweed</h4>
+                            <span>Professor</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent"></div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Working with Zohra was a pleasure. Her creative approach and technical skills helped us create a stunning website that perfectly represents our brand."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Camila Campus</h4>
+                            <span>Friend and Classmate</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card">
+                    <div class="testimonial-content">
+                        <p>"Zohra's cultural sensitivity and design expertise made our international project a success. She understands how to bridge different perspectives through design."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>Rozina Malik</h4>
+                            <span>Colleague</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="testimonial-card featured-testimonial">
+                    <div class="testimonial-content">
+                        <p>"Zohra's technical skills combined with her creative vision resulted in a website that perfectly captures our brand essence. Her attention to detail is outstanding."</p>
+                    </div>
+                    <div class="testimonial-author">
+                        <div class="author-avatar">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <div class="author-info">
+                            <h4>En. Ruhullah asadi</h4>
+                            <span>Boss, ISSA Academy</span>
+                        </div>
+                    </div>
+                    <div class="testimonial-accent"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Let's Connect</h2>
+                <p class="section-subtitle">Ready to bring your ideas to life? Let's work together!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-intro">
+                    <h3>Get in Touch</h3>
+                    <p>
+                        I'm always excited to hear about new projects and opportunities. Whether you have a specific project in mind 
+                        or just want to chat about design and development, I'd love to hear from you!
+                    </p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Email</h4>
+                                <a href="mailto:zohra.mirzaiy@example.com">mirzaiyzohra@gmail.com</a>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Location</h4>
+                                <p>Toronto, Canada</p>
+                            </div>
+                        </div>
+                        <div class="contact-method">
+                            <div class="method-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="method-details">
+                                <h4>Availability</h4>
+                                <p>Available for freelance projects</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="social-links">
+                        <h4>Follow My Work</h4>
+                        <div class="social-icons">
+                            <a href="https://github.com/ZohraMirzaiy" target="_blank" class="social-link" aria-label="GitHub">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.linkedin.com/in/zohra-mirzaiy-180691363?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" class="social-link" aria-label="LinkedIn">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                            <a href="https://www.instagram.com/zohra_323?igsh=MnF5MHlwdnFyeDV6&utm_source=qr" target="_blank" class="social-link" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://x.com/zmirzaiy?s=21" target="_blank" class="social-link" aria-label="X (Twitter)">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form-container">
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <label for="name">Name *</label>
+                            <input type="text" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Subject *</label>
+                            <input type="text" id="subject" name="subject" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message *</label>
+                            <textarea id="message" name="message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i>Send Message
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <h3>Zohra Mirzaiy</h3>
+                    <p>Creating digital experiences that inspire and connect</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#home">Home</a>
+                    <a href="#about">About</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/ZohraMirzaiy" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/zohra-mirzaiy-180691363?utm_source=share_via&utm_content=profile&utm_medium=member_ios" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.instagram.com/zohra_323?igsh=MnF5MHlwdnFyeDV6&utm_source=qr" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/zmirzaiy?s=21" target="_blank" aria-label="X (Twitter)"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Zohra Mirzaiy. Made with <i class="fas fa-heart"></i> and lots of coffee.</p>
+                <p>Designed & Developed with passion</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 
